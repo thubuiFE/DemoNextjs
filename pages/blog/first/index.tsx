@@ -1,4 +1,4 @@
-import BlogSecond from "../second";
+import BlogSecond from "@pages/blog/second";
 
 const BlogFirst = () => {
   const handleClick = () => {
