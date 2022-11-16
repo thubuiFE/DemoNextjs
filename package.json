@@ -43,11 +43,5 @@
     "stylelint-checkstyle-formatter": "^0.1.2",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-scss": "^4.3.0"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint --verbose -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint"
-    }
   }
 }
