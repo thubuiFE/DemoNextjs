@@ -6,13 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint './src/**/*.{js}'",
     "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:js:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "lint:css": "stylelint **/*.{scss,css}",
     "lint:css:fix": "stylelint --fix **/*.{scss,css}",
     "lint:json": "prettier --check \"./**/*.json\"",
     "lint:json:fix": "prettier --write \"./**/*.json\"",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:json",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix && npm run lint:json:fix"
   },
   "dependencies": {
@@ -27,6 +27,8 @@
     "typescript": "*"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.43.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
