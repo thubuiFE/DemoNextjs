@@ -1,0 +1,20 @@
+.productCardComponentWrapper {
+  background: white;
+  height: fit-content;
+  padding: 20px;
+
+  .productContentWrapper {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .productName {
+    color: black;
+    font-weight: 600;
+  }
+
+  .productPrice {
+    color: red;
+    font-weight: 600;
+  }
+}
