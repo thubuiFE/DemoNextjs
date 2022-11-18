@@ -37,23 +37,30 @@ const FormEdit = () => {
   return (
     <div>
       <Head>
+        {/* <!-- HTML Meta Tags --> */}
         <title>Product Detail</title>
-        <meta property="og:title" content="Product Detail" key="title" />
+        <meta name="description" content="Product Detail Page" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
         <meta name="robots" content="all" />
         <meta name="googlebot" content="noindex,nofollow" />
         <meta name="google" content="nositelinkssearchbox" />
         <meta name="google" content="notranslate" />
-        <meta property="og:title" content="The Rock" />
-        <meta property="og:type" content="video.movie" />
+
+        {/* <!-- Google / Search Engine Tags --> */}
+        <meta itemProp="name" content="Product Detail" />
+        <meta itemProp="description" content="Product Detail Page" />
+        <meta itemProp="image" content={productInfo?.image_url} />
+
+        {/* <!-- Facebook Meta Tags --> */}
         <meta
           property="og:url"
-          content="https://demo-nextjs-a0njdhojl-thubuife.vercel.app/detail"
+          content={`https://demo-nextjs-a0njdhojl-thubuife.vercel.app/detail/${id}`}
         />
-        {/* images */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Product Detail" />
+        <meta property="og:description" content="Product Detail Page" />
         <meta property="og:image" content={productInfo?.image_url} />
-        <meta property="og:image:secure_url" content={productInfo?.image_url} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
