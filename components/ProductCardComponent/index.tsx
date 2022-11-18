@@ -10,10 +10,10 @@ import { useListProducts } from "../../hooks/useListProducts";
 import styles from "../../styles/ProductCard.module.scss";
 
 const ProductCardComponent = () => {
-  const { data, isLoading, isFetching } = useListProducts();
+  const { data, isLoading } = useListProducts();
   const dataProduct = data?.data?.data;
 
-  if (isFetching) {
+  if (isLoading) {
     return <LoadingSpinner />;
   }
 

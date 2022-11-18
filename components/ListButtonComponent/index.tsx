@@ -21,6 +21,9 @@ const ListButton = ({ id }: { id: string }) => {
   return (
     <div className="list-button-wrapper" style={{ marginLeft: "auto" }}>
       <button className="btn-edit" style={{ marginRight: "10px" }}>
+        <Link href={`/detail/${id}`}>Detail</Link>
+      </button>
+      <button className="btn-edit" style={{ marginRight: "10px" }}>
         <Link href={`/edit/${id}`}>Edit</Link>
       </button>
       <button className="btn-delete" onClick={handleDelete}>

@@ -1,0 +1,33 @@
+.detailProduct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #A9A9A9;
+    height: 800px;
+    .detailProductContent {
+        height: 300px;
+        .productName {
+            font-size: 20px;
+            font-weight: 600;
+            color: #8B008B;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .productImgPrice {
+            color: red;
+            font-weight: 700;
+            margin-top: 10px;
+            span {
+                color: gray;
+                font-weight: 500;
+;            }
+        }
+        .productDescription {
+            span {
+                color: gray;
+                font-weight: 500;
+;            }
+        }
+    }
+}
